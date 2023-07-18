@@ -170,3 +170,8 @@ body {
    border-radius: 5px;
    margin-bottom: 10px;
 }
+
+.form-div input, textarea {
+   border-radius: 10px;
+   border: 0;
+}
