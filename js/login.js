@@ -78,3 +78,4 @@ function chiqarish() {
     var outputElement = document.getElementById("output");
     outputElement.innerHTML = "Siz ro'yxatdan o'tdingiz";
   }
+  
