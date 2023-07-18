@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+background-size: cover;
+background-attachment: fixed;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+.slider {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.slider-list{
+    display: flex;
+    padding: 0;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.slider-item {
+    display: none;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#slider-control-1:checked ~ .slider-list .slider-item:nth-child(1), 
+#slider-control-2:checked ~ .slider-list .slider-item:nth-child(2), 
+#slider-control-3:checked ~ .slider-list .slider-item:nth-child(3), 
+#slider-control-4:checked ~ .slider-list .slider-item:nth-child(4), 
+#slider-control-5:checked ~ .slider-list .slider-item:nth-child(5) {
+    display: block;
+}
+
+.slider-img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+.slider-ctrls {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.slider-ctrls label{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 0;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slider-ctrls label:hover {
+    background-color: #fff;
+    border: 3px outset gold;
+}
+
+#slider-control-1:checked ~ .slider-ctrls label:nth-child(1), 
+#slider-control-2:checked ~ .slider-ctrls label:nth-child(2), 
+#slider-control-3:checked ~ .slider-ctrls label:nth-child(3), 
+#slider-control-4:checked ~ .slider-ctrls label:nth-child(4), 
+#slider-control-5:checked ~ .slider-ctrls label:nth-child(5) {
+    background-color: #fff;
+    border: 3px outset gold;
+}

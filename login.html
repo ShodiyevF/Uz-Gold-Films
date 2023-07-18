@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multfilmlar</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        
+        <div class="container">
+            
+            <section class="site-header-top">
+                
+                <section class="logo">
+                    
+                    <a href="index.html"><img src="img/icons8-movie-96.png" alt="Logotip"></a>
+                    <a href="index.html">UZ Gold Film</a>
+                    
+                </section>
+                
+                <nav class="site-header-nav">
+                    
+                    <ul>
+                        <li><a href="index.html">Bosh sahifa</a></li>
+                        <li><a href="films.html">Filmlar</a></li>
+                        <li><a href="multiklar.html">Mutlfilmlar</a></li>
+                        <li><a href="series.html">Seriallar</a></li>
+                        <li><a href="animes.html">Animelar</a></li>
+                    </ul>
+                    
+                </nav>
+                
+                <a class="follow-link" href="login.html">Ro'yxatdan o'tish</a>
+                
+            </section>
+            
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="container form-wrapper">
+            <form id="signup-form">
+                <label for="username">E-mail:</label>
+                <input type="text" id="username" required><br>
+
+                <div class="password">
+                    <label for="password">Parol:</label>
+                    <input type="text" id="password" required>
+                </div>
+                    <button class="submit-btn" type="button" onclick="login()">Kirish</button>
+            </form>
+
+            <div class="message"></div>
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
