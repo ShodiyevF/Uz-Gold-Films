@@ -28,7 +28,7 @@ body {
   margin: 30px auto;
   margin-left: 95px;
   padding: 0 15px;
-  position: relative;
+  /* position: relative; */
 }
 
 .slider-list{
@@ -90,6 +90,7 @@ body {
 #slider-control-3:checked ~ .slider-ctrls label:nth-child(3), 
 #slider-control-4:checked ~ .slider-ctrls label:nth-child(4), 
 #slider-control-5:checked ~ .slider-ctrls label:nth-child(5) {
-  background-color: gold;
-  border: 3px outset #fff;
+  background-color: red;
+  border: 3px outset gold;
+  margin-bottom: 20px;
 }

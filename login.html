@@ -46,15 +46,15 @@
         
     </header>
 
-    <main>
+    <main method="POST" data-netlify="true">
         <section class="container form-wrapper">
-            <form id="signup-form" method="POST" data-netlify="true">
+            <form id="signup-form">
                 <label for="username">E-mail:</label>
-                <input type="text" id="username" required><br>
+                <input type="text" id="username" required placeholder="E-mailingizni kiriting!"><br>
 
                 <div class="password">
                     <label for="password">Parol:</label>
-                    <input type="text" id="password" required>
+                    <input type="text" id="password" required placeholder="Parolni kiriting!">
                 </div>
                     <button class="submit-btn" type="button" onclick="login()">Kirish</button>
             </form>
@@ -62,11 +62,10 @@
             <div class="message"></div>
             <div id="output"></div>
         </section>
-    </main>
 
-    <footer>
 
-        <form action="#" method="POST" data-netlify="true">
+
+        <form action="#">
 
             <div class="form-div">
 
@@ -98,8 +97,7 @@
             <button class="submit-btn" type="submit">Jo'natish</button>
 
         </form>
-
-    </footer>
+    </main>
 
     <script src="js/login.js"></script>
 

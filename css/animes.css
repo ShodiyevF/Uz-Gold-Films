@@ -115,7 +115,7 @@ body {
     color: #fff;
 }
 
-/* main-bo'limi:Multfilmlar*/
+/* main-bo'limi:Animelar*/
 
 .movies2-h2 {
     color: white;
@@ -126,6 +126,10 @@ body {
 .anime-parent {
     display: flex;
     margin-left: 30px;
+}
+
+.anime-people:hover {
+    font-size: 20px;
 }
 
 .anime-people img {
@@ -140,6 +144,7 @@ body {
 }
 
 .anime-people a {
+    margin-bottom: 50px;
     color: yellow;
     text-decoration: none;
     transition: all 0.5s ease-in-out;

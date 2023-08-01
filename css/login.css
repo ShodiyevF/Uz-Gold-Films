@@ -172,6 +172,7 @@ body {
 }
 
 .form-div input, textarea {
+   padding: 5px 5px;
    border-radius: 10px;
    border: 0;
    color: #000;
